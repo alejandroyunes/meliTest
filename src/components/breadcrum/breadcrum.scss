@@ -1,0 +1,14 @@
+.breadcrum-wrapper {
+  margin: 0 auto;
+  width: 980px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  .breadcrum {
+    h3 {
+      font-size: 14px;
+      color: #999;
+      font-weight: normal;
+    }
+  }
+}
