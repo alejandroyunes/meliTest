@@ -1,4 +1,4 @@
-import './index.scss'
+import './main.scss'
 import SearchBar from './components/searcBar/Search'
 import BreadCrums from './components/breadcrum/BreadCrum'
 import ResultProduct from './components/resultPage/ResultProduct'
