@@ -1,9 +1,13 @@
-import SearchBar from "./components/searchBar/Search"
+import BreadCrums from "./components/breadcrums/Index"
+import SearchBar from "./components/searchBar/Index"
 
 function App() {
 
   return (
-    <SearchBar />
+    <>
+      <SearchBar />
+      <BreadCrums />
+    </>
   )
 }
 
