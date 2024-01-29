@@ -4,28 +4,28 @@ import Shipping from '../../assets/shipping.png'
 
 export default function Products() {
   return (
-    <main className='results-wrapper'>
-      <div className='results-content'>
-        <div className='results'>
+    <main className='products-wrapper'>
+      <div className='products-content'>
+        <div className='products'>
 
-          <div className='item-image'>
+          <div className='product-image'>
             <img src={Iphone} alt='' />
           </div>
 
-          <div className='item-details__content'>
+          <div className='product-details__content'>
 
-            <div className='item-details'>
-              <div className='item-price'>
+            <div className='product-details'>
+              <div className='product-price'>
                 <h3>$ 15, 000</h3>
                 <img src={Shipping} alt='shipping truck icon' />
               </div>
 
-              <div className='item-location'>
+              <div className='product-location'>
                 <p>Capital Federal</p>
               </div>
             </div>
 
-            <div className='item-description'>
+            <div className='product-description'>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
                 illum!
