@@ -1,4 +1,5 @@
 import BreadCrums from "./components/breadcrums/Index"
+import Products from "./components/products"
 import SearchBar from "./components/searchBar/Index"
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <>
       <SearchBar />
       <BreadCrums />
+      <Products />
     </>
   )
 }
