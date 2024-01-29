@@ -1,9 +1,9 @@
+import SearchBar from "./components/searchBar/Search"
+
 function App() {
 
   return (
-    <>
-    <h1>hello world</h1>
-    </>
+    <SearchBar />
   )
 }
 
