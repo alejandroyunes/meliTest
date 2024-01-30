@@ -6,7 +6,6 @@
 .products-content {
   margin: 0 auto;
   max-width: 1000px;
-  background-color: #fff;
 }
 
 .products {
@@ -14,6 +13,7 @@
   display: flex;
   width: 100%;
   border-bottom: 1px solid #eee;
+  background-color: #fff;
 
   @media (max-width: 756px) {
     display: flex;
@@ -26,6 +26,7 @@
       width: 180px;
       border-radius: 4px;
     }
+
     @media (max-width: 756px) {
       display: flex;
       justify-content: center;

@@ -9,7 +9,7 @@ function App() {
     <>
       <SearchBar />
       <BreadCrums />
-      {/* <Products /> */}
+      <Products />
       <ProductDetails />
     </>
   )
