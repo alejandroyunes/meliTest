@@ -1,6 +1,9 @@
 import { useLocation } from "react-router-dom"
 import Products from "../../components/products"
 import useFetchData from "../../hooks/useFetchData"
+import Loading from "../../components/loading"
+import Error from "../../components/error"
+import EmptySearch from "../../components/emptySearch"
 
 export default function ProductPage() {
   const location = useLocation()
@@ -10,14 +13,11 @@ export default function ProductPage() {
 
   const { data, loading, error } = useFetchData(searchInput || '')
 
-  // console.log('data', data?.['results'])
-  console.log('data', data)
-
   return (
     <div>
-      {loading && <p>Loading...</p>}
-      {error && <p>Error: {error.message}</p>}
-      {data && <Products result={data?.['results']} />}
+      {loading && <Loading />}
+      {error && <Error msg={error?.message} />}
+      {searchInput && data?.['results'] ? <Products result={data?.['results']} /> : <EmptySearch />}
     </div>
   )
 }

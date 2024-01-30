@@ -2,7 +2,7 @@ import './products.scss'
 import Shipping from '../../assets/shipping.png'
 import { currencyFormat } from '../../utils/currencyFormat'
 
-export interface Items {
+export interface Item {
   id: string
   title: string
   thumbnail: string
@@ -13,7 +13,7 @@ export interface Items {
 }
 
 interface ProductsProps {
-  result: Items[]
+  result: Item[]
 }
 
 export default function Products({ result }: ProductsProps) {

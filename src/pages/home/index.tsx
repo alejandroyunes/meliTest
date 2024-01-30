@@ -1,13 +1,10 @@
-import BreadCrums from "../../components/breadcrums/Index"
-import ProductDetails from "../../components/productDetails"
+import EmptySearch from '../../components/emptySearch'
 
 export default function HomePage() {
 
   return (
     <main>
-      <BreadCrums />
-      
-      {/* <ProductDetails /> */}
+      <EmptySearch />
     </main>
   )
 }

@@ -1,0 +1,12 @@
+.empty-wrapper {
+  width: 100%;
+  padding: 0 24px;
+}
+
+.empty-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+}
