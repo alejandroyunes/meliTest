@@ -1,8 +1,8 @@
 import { RouteObject } from "react-router-dom"
-import ErrorPage from "../pages/error-page";
-import HomePage from "../pages/home/HomePage";
-import Layout from "../layout";
-import Best from "../pages/Best";
+import ErrorPage from "../pages/error-page"
+import HomePage from "../pages/home"
+import Layout from "../layout"
+import Product from "../pages/products"
 
 const routerConfig: RouteObject[] = [
   {
@@ -14,11 +14,11 @@ const routerConfig: RouteObject[] = [
         element: <HomePage />,
       },
       {
-        path: 'best',
-        element: <Best />,
+        path: 'items',
+        element: <Product />,
         errorElement: <ErrorPage />
       },
     ]
   },
-];
+]
 export default routerConfig
