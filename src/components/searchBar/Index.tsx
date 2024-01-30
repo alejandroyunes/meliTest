@@ -1,16 +1,19 @@
 import './search.scss'
 import Logo from '../../assets/Logo_ML.png'
 import SearchIcon from '../../assets/ic_Search.png'
+import { useState } from 'react'
 
 export default function SearchBar() {
+  const [searchInput, setSearchInput] = useState('')
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value = event.target.value
+    setSearchInput(value)
     console.log(value)
   }
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault()
-    console.log('here')
+    console.log('handlesubmit: ', searchInput)
   }
 
   return (
