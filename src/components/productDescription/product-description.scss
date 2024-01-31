@@ -1,0 +1,26 @@
+.product-description__wrapper {
+  width: 100%;
+  padding: 0 24px;
+}
+
+.product-description__content {
+  padding-top: 32px;
+  margin: 0 auto;
+  max-width: 1000px;
+  background-color: #fff;
+
+  .product-description__description {
+    width: 100%;
+
+    h2 {
+      font-size: 28px;
+      padding-bottom: 32px;
+      font-weight: 400;
+    }
+
+    p {
+      max-width: 640px;
+      padding-bottom: 32px;
+    }
+  }
+}

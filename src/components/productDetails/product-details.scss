@@ -11,7 +11,7 @@
 
   .product-details__main {
     display: grid;
-    grid-template-columns: 1fr .4fr;
+    grid-template-columns: 1fr .5fr;
 
     @media (max-width: 756px) {
       grid-template-columns: 1fr;
@@ -21,7 +21,6 @@
       img {
         width: 100%;
         object-fit: contain;
-        padding-left: 32px;
         max-height: 600px;
       }
     }

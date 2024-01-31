@@ -4,7 +4,7 @@ interface ErrorMessageProps {
   msg: string | undefined;
 }
 
-export default function Error({ msg }: ErrorMessageProps) {
+export default function ErrorMsg({ msg }: ErrorMessageProps) {
   return (
     <div className='error-wrapper'>
       <div className="error-content">

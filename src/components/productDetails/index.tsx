@@ -1,4 +1,5 @@
 import { currencyFormat } from '../../utils/currencyFormat'
+import ProductDescription from '../productDescription'
 import './product-details.scss'
 
 export interface Item {
@@ -6,6 +7,7 @@ export interface Item {
   title: string
   pictures: { url: string }[]
   price: number
+  condition: string
 }
 interface ProductDetailProps {
   result: Item
@@ -25,7 +27,7 @@ export default function ProductDetails({ result }: ProductDetailProps) {
 
           <div className='product-details'>
 
-            <p>Nuevo 242 Vendidos</p>
+            <p>{result.condition === 'new' ? 'nuevo' : 'usado'} 242 Vendidos</p>
             <h1>{result.title}</h1>
             <h2>{currencyFormat(result.price)}</h2>
 
@@ -36,15 +38,7 @@ export default function ProductDetails({ result }: ProductDetailProps) {
 
         </div>
 
-        <div className='product-details__description'>
-          <h2>Descripción del producto</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fugit
-            voluptatem repellat voluptas enim a commodi eos obcaecati iusto non
-            quia atque, corporis libero error beatae recusandae ipsam. Atque,
-            iusto!
-          </p>
-        </div>
+        <ProductDescription id={result.id}/>
 
       </div>
     </main>
