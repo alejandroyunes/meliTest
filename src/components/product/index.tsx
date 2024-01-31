@@ -23,15 +23,15 @@ export default function Product({ result }: ProductsProps) {
   return (
     <>
       {result.map((result) => (
-        <div className='products' key={result.id} onClick={() => navigate(`${result.id}`)}>
+        <div className='product' key={result.id} onClick={() => navigate(`${result.id}`)}>
 
           <div className='product-image'>
             <img src={result.thumbnail} alt={result.title} />
           </div>
 
-          <div className='product-details__content'>
+          <div className='product-content'>
 
-            <div className='product-details'>
+            <div className='product'>
               <div className='product-price'>
                 <h3>{currencyFormat(result.price)}</h3>
                 {result.shipping.free_shipping && <img src={Shipping} alt='free shipping icon' />}

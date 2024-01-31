@@ -31,15 +31,9 @@ export default function BreadCrums() {
     }
   }, [searchInput])
 
-  let storedSearchInput: string | null = null
+  const storedSearchInput: string | null = searchInput || localStorage.getItem('searchInput') || ''
 
-  if (searchInput) {
-    storedSearchInput = searchInput
-  } else {
-    storedSearchInput = localStorage.getItem('searchInput')
-  }
-
-  const query = `/sites/MLA/search?q=${storedSearchInput || ''}&limit=1`
+  const query = `/sites/MLA/search?q=${storedSearchInput}&limit=1`
   const { data } = useFetchData(query || '')
   const filters: Filter[] = data?.['filters'] || []
 
