@@ -1,8 +1,8 @@
-import { useLocation } from "react-router-dom"
-import Products from "../../components/products"
-import useFetchData from "../../hooks/useFetchData"
-import Loading from "../../components/loading"
-import ErrorMsg from "../../components/error"
+import { useLocation } from 'react-router-dom'
+import Products from '../../components/products'
+import useFetchData from '../../hooks/useFetchData'
+import Loading from '../../components/loading'
+import ErrorMsg from '../../components/error'
 
 export default function ProductPage() {
   const location = useLocation()

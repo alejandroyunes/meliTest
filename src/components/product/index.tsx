@@ -23,7 +23,7 @@ export default function Product({ result }: ProductsProps) {
   return (
     <>
       {result.map((result) => (
-        <div className='product' key={result.id} onClick={() => navigate(`${result.id}`)}>
+        <div className='product-wrapper' key={result.id} onClick={() => navigate(`${result.id}`)}>
 
           <div className='product-image'>
             <img src={result.thumbnail} alt={result.title} />

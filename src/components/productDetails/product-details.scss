@@ -46,7 +46,7 @@
 
       .product-details__button {
         margin-right: 32px;
-
+        
         @media (max-width: 756px) {
           margin-right: 0;
           margin-bottom: 24px;
@@ -59,6 +59,7 @@
           color: #fff;
           background-color: #3483fa;
           width: 100%;
+          cursor: pointer;
         }
 
       }

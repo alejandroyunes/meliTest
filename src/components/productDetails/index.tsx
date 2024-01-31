@@ -1,5 +1,5 @@
 import { currencyFormat } from '../../utils/currencyFormat'
-import BreadCrums from '../breadcrums/Index'
+import BreadCrumb from '../breadcrumb/Index'
 import ProductDescription from '../productDescription'
 import './product-details.scss'
 
@@ -18,7 +18,7 @@ export default function ProductDetails({ result }: ProductDetailProps) {
 
   return (
     <>
-      <BreadCrums />
+      <BreadCrumb />
       <main className='product-details__wrapper'>
         <div className='product-details__content'>
 

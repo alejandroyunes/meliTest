@@ -1,4 +1,4 @@
-import './breadcrum.scss'
+import './breadcrumb.scss'
 import useFetchData from '../../hooks/useFetchData'
 import { useEffect } from 'react'
 import React from 'react'
@@ -20,7 +20,7 @@ interface Filter {
   values: FilterValue[]
 }
 
-export default function BreadCrums() {
+export default function BreadCrumb() {
 
   const searchParams = new URLSearchParams(location.search)
   const searchInput = searchParams.get('search')
@@ -38,8 +38,8 @@ export default function BreadCrums() {
   const filters: Filter[] = data?.['filters'] || []
 
   return (
-    <section className='breadcrum-wrapper'>
-      <div className='breadcrum-content'>
+    <section className='breadcrumb-wrapper'>
+      <div className='breadcrumb-content'>
 
         {filters.length > 0 ? (
           <ul>
@@ -54,8 +54,8 @@ export default function BreadCrums() {
                   ))
                 ) : (
                   (value => {
-                    const pathFromRoot = value.path_from_root?.map((path) => path.name).join(' > ')
-                    return pathFromRoot || value.name
+                    const pathFromRoot = value.path_from_root?.map((path) => path.name).join(' > ');
+                    return pathFromRoot ? pathFromRoot.replace(/,/g, ' > ') : value.name;
                   })(filter.values[0])
                 )}
               </li>

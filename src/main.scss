@@ -32,10 +32,11 @@ body {
   margin: 0 auto;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+
+.error {
+  color: #3483fa;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 @media (prefers-color-scheme: light) {
