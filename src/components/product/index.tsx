@@ -21,38 +21,35 @@ export interface ProductsProps {
 export default function Product({ result }: ProductsProps) {
   const navigate = useNavigate()
   return (
-    <>
 
-      {result.map((result) => (
-        <>
-          <div className='product-wrapper' key={result.id} onClick={() => navigate(`${result.id}`)} data-testid="product">
+      result.map((result) => (
+        <div className='product-wrapper' key={result.id} onClick={() => navigate(`${result.id}`)} data-testid="product">
 
-            <div className='product-image'>
-              <img src={result.thumbnail} alt={result.title} />
+          <div className='product-image'>
+            <img src={result.thumbnail} alt={result.title} />
+          </div>
+
+          <div className='product-content'>
+
+            <div className='product'>
+              <div className='product-price'>
+                <h3>{currencyFormat(result.price)}</h3>
+                {result.shipping.free_shipping && <img src={Shipping} alt='Icono de envio gratis' />}
+              </div>
+
+              <div className='product-location'>
+                <p>Capital Federal</p>
+              </div>
             </div>
 
-            <div className='product-content'>
-
-              <div className='product'>
-                <div className='product-price'>
-                  <h3>{currencyFormat(result.price)}</h3>
-                  {result.shipping.free_shipping && <img src={Shipping} alt='Icono de envio gratis' />}
-                </div>
-
-                <div className='product-location'>
-                  <p>Capital Federal</p>
-                </div>
-              </div>
-
-              <div className='product-description'>
-                <p>{result.title}</p>
-              </div>
-
+            <div className='product-description'>
+              <p>{result.title}</p>
             </div>
 
           </div>
-        </>
-      ))}
-    </>
+
+        </div>
+      ))
+    
   )
 }

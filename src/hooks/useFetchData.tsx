@@ -5,6 +5,7 @@ const useFetchData = (searchInput: string) => {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<Error | null>(null)
   const baseUrl = 'https://api.mercadolibre.com'
+  // const baseUrl = 'http://localhost:5000/api/items'
 
   useEffect(() => {
     const fetchData = async () => {
@@ -14,7 +15,6 @@ const useFetchData = (searchInput: string) => {
         if (!response.ok) {
           throw new Error('Hubo un error en el request')
         }
-
         const result = await response.json()
         setData(result)
       } catch (error) {
