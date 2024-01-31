@@ -1,7 +1,7 @@
 import { RouteObject } from 'react-router-dom'
 import ErrorPage from '../pages/error-page'
 import HomePage from '../pages/home'
-import Layout from '../layout'
+import Layout from '../pages/layout'
 import Product from '../pages/products'
 import ProductDetailsPage from '../pages/productDetails'
 

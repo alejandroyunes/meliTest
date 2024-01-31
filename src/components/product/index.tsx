@@ -34,7 +34,7 @@ export default function Product({ result }: ProductsProps) {
             <div className='product'>
               <div className='product-price'>
                 <h3>{currencyFormat(result.price)}</h3>
-                {result.shipping.free_shipping && <img src={Shipping} alt='free shipping icon' />}
+                {result.shipping.free_shipping && <img src={Shipping} alt='Icono de envio gratis' />}
               </div>
 
               <div className='product-location'>

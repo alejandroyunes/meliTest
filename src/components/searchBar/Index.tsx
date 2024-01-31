@@ -3,7 +3,6 @@ import Logo from '../../assets/Logo_ML.png'
 import SearchIcon from '../../assets/ic_Search.png'
 import { useNavigate } from 'react-router-dom'
 
-
 interface SearchBarProps {
   searchInput: string
   handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void

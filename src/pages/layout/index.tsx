@@ -1,5 +1,5 @@
 import { Outlet, useNavigate } from 'react-router-dom'
-import SearchBar from './components/searchBar/Index'
+import SearchBar from '../../components/searchBar/Index'
 import { useState } from 'react'
 
 const ITEMS_PATH = '/items'
