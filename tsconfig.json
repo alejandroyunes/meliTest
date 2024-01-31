@@ -28,6 +28,7 @@
   },
   "include": [
     "src/main",
+    "src/index.d.ts",
     "cypress/e2e/search_spec.cy.ts"
   ],
   "references": [
