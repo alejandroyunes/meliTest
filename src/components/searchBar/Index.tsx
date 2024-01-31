@@ -22,9 +22,9 @@ export default function SearchBar({ searchInput, handleChange, handleSubmit }: S
 
         <form className='search-product__input' onSubmit={handleSubmit}>
           <div className='search-input'>
-            <input type='text' placeholder='Nunca dejes de buscar' onChange={handleChange} value={searchInput} />
+            <input type='text' placeholder='Nunca dejes de buscar' onChange={handleChange} value={searchInput} data-testid="input"/>
           </div>
-          <button className='search-icon' type='submit'>
+          <button className='search-icon' type='submit' data-testid="input-button">
             <img src={SearchIcon} alt='buscar butón Mercado Libre' />
           </button>
         </form>

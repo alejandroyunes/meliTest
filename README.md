@@ -2,6 +2,7 @@
 # npm, pnpm or yarn install
 # npm run dev
 # http://localhost:5173/
+# npx cypress open to run cypres tets
 
 ```js
 export default {
