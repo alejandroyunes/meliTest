@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom'
 export default function SearchBar() {
   const [searchInput, setSearchInput] = useState('')
 
-  let navigate = useNavigate()
+  const navigate = useNavigate()
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value = event.target.value
@@ -26,7 +26,7 @@ export default function SearchBar() {
     <header className='search-wrapper'>
       <div className='search-content'>
 
-        <div className='logo'>
+        <div className='logo' onClick={() => navigate('/')}>
           <img src={Logo} alt='Logo Mercado Libre' />
         </div>
 

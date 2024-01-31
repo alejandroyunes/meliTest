@@ -9,9 +9,9 @@ const useFetchData = (searchInput: string) => {
     const fetchData = async () => {
       setLoading(true)
       try {
-        const response = await fetch(`https://api.mercadolibre.com/sites/MLA/search?q=${searchInput}&limit=4`)
+        const response = await fetch(`https://api.mercadolibre.com${searchInput}`)
         if (!response.ok) {
-          throw new Error('Network response was not ok')
+          throw new Error('Hubo un error en el request')
         }
 
         const result = await response.json()

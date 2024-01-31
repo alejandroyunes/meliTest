@@ -1,6 +1,7 @@
 import './products.scss'
 import Shipping from '../../assets/shipping.png'
 import { currencyFormat } from '../../utils/currencyFormat'
+import { useNavigate } from 'react-router-dom'
 
 export interface Item {
   id: string
@@ -17,12 +18,13 @@ interface ProductsProps {
 }
 
 export default function Products({ result }: ProductsProps) {
+  const navigate = useNavigate()
 
   return (
     <main className='products-wrapper'>
       <div className='products-content'>
         {result.map((result) => (
-          <div className='products' key={result.id}>
+          <div className='products' key={result.id} onClick={() => navigate(`${result.id}`)}>
 
             <div className='product-image'>
               <img src={result.thumbnail} alt={result.title} />
