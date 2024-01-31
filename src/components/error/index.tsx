@@ -1,7 +1,7 @@
 import './error.scss'
 
 interface ErrorMessageProps {
-  msg: string | undefined;
+  msg: string | undefined
 }
 
 export default function ErrorMsg({ msg }: ErrorMessageProps) {
