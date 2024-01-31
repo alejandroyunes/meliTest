@@ -4,12 +4,13 @@ const useFetchData = (searchInput: string) => {
   const [data, setData] = useState(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<Error | null>(null)
+  const baseUrl = 'https://api.mercadolibre.com'
 
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true)
       try {
-        const response = await fetch(`https://api.mercadolibre.com${searchInput}`)
+        const response = await fetch(`${baseUrl}${searchInput}`)
         if (!response.ok) {
           throw new Error('Hubo un error en el request')
         }

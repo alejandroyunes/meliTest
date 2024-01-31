@@ -42,6 +42,7 @@
           outline: none;
           padding-left: 8px;
           font-size: 18px;
+          font-family: 'proxima';
         }
       }
 
@@ -53,7 +54,8 @@
         width: 32px;
         height: 32px;
         border: none;
-
+        cursor: pointer;
+        
         img {
           width: 16px;
           height: 16px;
