@@ -1,3 +1,4 @@
+import React from 'react'
 import { useLocation } from 'react-router-dom'
 import Products from '../../components/products'
 import useFetchData from '../../hooks/useFetchData'

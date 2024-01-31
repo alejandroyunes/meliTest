@@ -1,3 +1,4 @@
+import React from 'react'
 import { currencyFormat } from '../../utils/currencyFormat'
 import BreadCrumb from '../breadcrumb/Index'
 import ProductDescription from '../productDescription'

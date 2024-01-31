@@ -1,3 +1,4 @@
+import React from 'react'
 import './empty.scss'
 
 export default function EmptySearch() {

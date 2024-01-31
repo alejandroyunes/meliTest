@@ -1,7 +1,10 @@
+import React from 'react'
 import './search.scss'
-import Logo from '../../assets/Logo_ML.png'
-import SearchIcon from '../../assets/ic_Search.png'
+// import Logo from '../../assets/Logo_ML.png'
+// import SearchIcon from '../../assets/ic_Search.png'
 import { useNavigate } from 'react-router-dom'
+import logo from '../../assets/logo.png'
+import searchIcon from '../../assets/ic_Search.png'
 
 interface SearchBarProps {
   searchInput: string
@@ -17,7 +20,7 @@ export default function SearchBar({ searchInput, handleChange, handleSubmit }: S
       <div className='search-content'>
 
         <div className='logo' onClick={() => navigate('/')}>
-          <img src={Logo} alt='Logo Mercado Libre' />
+          <img src={logo} alt='Logo Mercado Libre' />
         </div>
 
         <form className='search-product__input' onSubmit={handleSubmit}>
@@ -25,7 +28,7 @@ export default function SearchBar({ searchInput, handleChange, handleSubmit }: S
             <input type='text' placeholder='Nunca dejes de buscar' onChange={handleChange} value={searchInput} data-testid="input"/>
           </div>
           <button className='search-icon' type='submit' data-testid="input-button">
-            <img src={SearchIcon} alt='buscar butón Mercado Libre' />
+            <img src={searchIcon} alt='buscar butón Mercado Libre' />
           </button>
         </form>
 

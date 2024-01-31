@@ -1,3 +1,4 @@
+import React from 'react'
 import './product.scss'
 import Shipping from '../../assets/shipping.png'
 import { currencyFormat } from '../../utils/currencyFormat'
@@ -19,7 +20,6 @@ export interface ProductsProps {
 
 export default function Product({ result }: ProductsProps) {
   const navigate = useNavigate()
-
   return (
     <>
 

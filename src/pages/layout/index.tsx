@@ -1,3 +1,4 @@
+import React from 'react'
 import { Outlet, useNavigate } from 'react-router-dom'
 import SearchBar from '../../components/searchBar/Index'
 import { useState } from 'react'

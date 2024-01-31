@@ -1,3 +1,4 @@
+import React from 'react'
 import useFetchData from '../../hooks/useFetchData'
 import './product-description.scss'
 

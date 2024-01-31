@@ -1,3 +1,4 @@
+import React from 'react'
 import './products.scss'
 import BreadCrumb from '../breadcrumb/Index'
 import Product, { ProductsProps } from '../product'
