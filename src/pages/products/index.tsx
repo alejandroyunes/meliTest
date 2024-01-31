@@ -12,7 +12,7 @@ export default function ProductPage() {
   const query = `/sites/MLA/search?q=${searchInput}&limit=4`
 
   const { data, loading, error } = useFetchData(query || '')
-
+  
   return (
     <div>
       {loading && <Loading />}

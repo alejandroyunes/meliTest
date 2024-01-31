@@ -2,6 +2,7 @@ import { currencyFormat } from '../../utils/currencyFormat'
 import BreadCrumb from '../breadcrumb/Index'
 import ProductDescription from '../productDescription'
 import './product-details.scss'
+import { Helmet } from "react-helmet"
 
 export interface Item {
   id: string
@@ -18,6 +19,10 @@ export default function ProductDetails({ result }: ProductDetailProps) {
 
   return (
     <>
+      <Helmet>
+        <title>{result.title}</title>
+        <meta name="description" content="Todos los productos que necesitas" />
+      </Helmet>
       <BreadCrumb />
       <main className='product-details__wrapper'>
         <div className='product-details__content'>
